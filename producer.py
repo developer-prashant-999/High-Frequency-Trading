@@ -27,7 +27,7 @@ def fetch_market_data(symbol):
     """Fetches real-time market data for the given symbol from Alpha Vantage API"""
     try:
         # Retrieve real-time data from Alpha Vantage
-        data, _ = ts.get_quote_endpoint(symbol)
+        data = ts.get_quote_endpoint(symbol)
         return data
 
     except Exception as e:
